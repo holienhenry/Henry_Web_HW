@@ -1,0 +1,16 @@
+/* =============
+    Hero
+============= */
+#hero{
+    background-image: url('../img/hero/hero.jpg');
+    X: left center right;
+    Y: top center bottom;
+    background-position: center;
+    background-size: cover;
+    height: 252px;
+
+    @include md {
+
+        height: 496px;
+    }
+}

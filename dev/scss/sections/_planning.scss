@@ -1,0 +1,27 @@
+/* =============
+    Planning
+============= */
+#planning{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". planning .";
+    background-color: $tan;
+
+    @include xl{
+        grid-template-columns: auto 1000px auto;
+    }
+    >div{
+        grid-area: planning;
+
+        ul{
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+                gap: 16px;
+            }
+            li{
+
+            }
+        }
+    }
+}
